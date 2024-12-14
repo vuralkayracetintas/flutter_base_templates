@@ -10,7 +10,9 @@ part of 'onboarding_mobx_view_model.dart';
 
 mixin _$OnboardingMobxViewModel on _OnboardingMobxViewModelBase, Store {
   late final _$pageControllerAtom = Atom(
-      name: '_OnboardingMobxViewModelBase.pageController', context: context);
+    name: '_OnboardingMobxViewModelBase.pageController',
+    context: context,
+  );
 
   @override
   PageController get pageController {

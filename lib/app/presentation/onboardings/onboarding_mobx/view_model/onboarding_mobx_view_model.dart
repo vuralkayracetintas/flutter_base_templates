@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:base_templates/core/functions/app_function.dart';
 import 'package:base_templates/core/router/app_router.dart';
 import 'package:flutter/material.dart';

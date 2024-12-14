@@ -5,7 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 
 @RoutePage()
+
+/// Onboarding Mobx State Management View
 final class OnboardingMobxView extends StatefulWidget {
+  /// Onboarding Mobx State Management View constractor
   const OnboardingMobxView({super.key});
 
   @override
