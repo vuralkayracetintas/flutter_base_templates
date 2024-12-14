@@ -1,17 +1,19 @@
 import 'package:base_templates/app/presentation/onboardings/onboarding_cubit/cubit/onboarding_cubit.dart';
-import 'package:base_templates/app/presentation/onboardings/onboarding_cubit/view/onboarding_cubit_view.dart';
 import 'package:base_templates/core/functions/app_function.dart';
 import 'package:base_templates/core/init/application_init.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
+  /// Initialize the application
   ApplicationInit.init();
-  runApp(const MyApp());
+  runApp(const BaseTemplatesApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+/// Base Templates App
+class BaseTemplatesApp extends StatelessWidget {
+  ///
+  const BaseTemplatesApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp.router(
         routerConfig: AppFunction.appRouter.config(),
-        title: 'Flutter Demo',
+        title: 'Base Templates Application ',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,

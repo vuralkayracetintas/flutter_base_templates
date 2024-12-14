@@ -6,11 +6,15 @@ import 'package:flutter/material.dart';
 
 part 'onboarding_state.dart';
 
-class OnboardingCubit extends Cubit<OnboardingState> {
+/// Onboarding cubit
+final class OnboardingCubit extends Cubit<OnboardingState> {
+  /// Onboarding cubit constructor
   OnboardingCubit() : super(const OnboardingState(currentPage: 0));
 
+  /// pagevuew builder page controller
   PageController pageController = PageController();
 
+  /// Next Page Function
   Future<void> nextPage() async {
     if (state.currentPage < 2) {
       var currentPage = state.currentPage;

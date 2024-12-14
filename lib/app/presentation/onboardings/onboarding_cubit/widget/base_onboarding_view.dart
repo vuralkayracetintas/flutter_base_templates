@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 
 /// Base Onboarding View
 final class BaseOnboardingView extends StatelessWidget {
-  
-  const BaseOnboardingView({super.key, required this.index});
+  /// Base Onboarding View constractor`
+  const BaseOnboardingView({required this.index, super.key});
+
+  /// index control
   final int index;
 
   @override
