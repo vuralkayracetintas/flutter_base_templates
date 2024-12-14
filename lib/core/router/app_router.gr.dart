@@ -46,3 +46,22 @@ class OnboardingCubitRoute extends PageRouteInfo<void> {
     },
   );
 }
+
+/// generated route for
+/// [OnboardingMobxView]
+class OnboardingMobxRoute extends PageRouteInfo<void> {
+  const OnboardingMobxRoute({List<PageRouteInfo>? children})
+      : super(
+          OnboardingMobxRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'OnboardingMobxRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const OnboardingMobxView();
+    },
+  );
+}
